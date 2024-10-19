@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -36,22 +36,10 @@
             color: #7f93b6;
             font-size: 2rem;
             font-weight: bold;
-            margin-bottom: 4rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
             text-align: center;
         }
-
-        .photo-gallery {
-            margin-top: 3em;
-        }
-
-        .photo-gallery .name {
-            text-align: right;
-            margin-bottom: 4rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        .photo-gallery img {}
 
         p {
             font-family: Arial, sans-serif;
@@ -67,14 +55,60 @@
         .clippedImg {
             background-image: url("img/phare-de-capbreton-dans-les-frances-99682296.jpg");
             background-position: -250px -55px;
-            height: 80px;
+            height: 60px;
             width: 100%;
         }
 
         .clippedImg2 {
+            background-image: url(img/phare-de-capbreton-dans-les-frances-99682296.jpg);
+            background-position: -250px -155px;
+            height: 300px;
+            width: 100%;
+        }
+
+        .clippedImg3 {
             background-image: url("img/phare-de-capbreton-dans-les-frances-99682296.jpg");
-            background-position: -250px -55px;
-            height: 500px;
+            background-position: -250px -455px;
+            height: 300px;
+            width: 100%;
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+        }
+
+        .photo-gallery .name {
+            text-align: right;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .photo-gallery .photo {
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+        }
+
+        .photo-gallery .photo.elisabeth-rouault {
+            background-image: url("img/elisabeth-rouault.jpg");
+            width: 100%;
+        }
+
+        .photo-gallery .photo.pierre-orcellet {
+            background-image: url("img/pierre-orcellet.jpg");
+            width: 100%;
+        }
+
+        .photo-gallery .photo.edouard-farre {
+            background-image: url("img/edouard-farre.jpg");
+            width: 100%;
+        }
+
+        .photo-gallery .photo.lorene-laugier {
+            background-image: url("img/lorene-laugier.jpg");
             width: 100%;
         }
     </style>
@@ -84,17 +118,26 @@
     <div class='container'>
         <div class='clippedImg'>&nbsp;</div>
         <h1>Cabinet Infirmier<br />des Cigales</h1>
+        <div class='clippedImg2'>&nbsp;</div>
         <p>Anciennement "Cabinet Christine Marbot", le cabinet infirmier des Cigales à Capbreton (Landes) regroupe
             aujourd'hui 4 infirmiers :</p>
         <div class="photo-gallery">
-            <img width="100%" src="img/elisabeth-rouault.jpg" alt="Elisabeth Rouault">
-            <div class="name">Elisabeth Rouault</div>
-            <img width="100%" src="img/pierre-orcellet.jpg" alt="Pierre Orcellet">
-            <div class="name">Pierre Orcellet</div>
-            <img width="100%" src="img/edouard-farre.jpg" alt="Edouard Farre">
-            <div class="name">Edouard Farre</div>
-            <img width="100%" src="img/lorene-laugier.jpg" alt="Lorene Laugier">
-            <div class="name">Lorene Laugier</div>
+            <div class="photo-container">
+                <div class='photo elisabeth-rouault'>&nbsp;</div>
+                <div class="name">Elisabeth Rouault</div>
+            </div>
+            <div class="photo-container">
+                <div class='photo pierre-orcellet'>&nbsp;</div>
+                <div class="name">Pierre Orcellet</div>
+            </div>
+            <div class="photo-container">
+                <div class='photo edouard-farre'>&nbsp;</div>
+                <div class="name">Edouard Farre</div>
+            </div>
+            <div class="photo-container">
+                <div class='photo lorene-laugier'>&nbsp;</div>
+                <div class="name">Lorene Laugier</div>
+            </div>
         </div>
         <p>Nous sommes ouverts tous les jours, dimanche et jours fériés inclus, de 7h à 20h et intervenons à domicile
             sur
@@ -104,7 +147,9 @@
         </p>
         <p class="phone">📞 <a href="tell:0558726048">05 58 72 60 48</a></p>
         <p>Soyez rassurés, le numéro de téléphone fixe bascule sur le portable de l'infirmier de garde.</p>
-        <div class='clippedImg2'>&nbsp;</div>
+
+        <p>Adresse :<br />15 Bd des Cigales Soorts</p>
+        <div class='clippedImg3'>&nbsp;</div>
     </div>
 </body>
 

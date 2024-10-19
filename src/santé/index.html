@@ -1,58 +1,79 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <title>Cabinet Infirmier des cigales à Capbreton</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Cabinet Infirmier des Cigales à Capbreton</title>
     <style>
-        html *
-        {
-           font-size: 2rem;
-           font-family: Arial !important;
+        html * {
+            font-size: 1.7rem;
+            font-family: Arial !important;
         }
+
         body {
-           font-family: Arial, sans-serif;
-           font-size: 2rem;
+
+            background-color: #313c51;
+            font-family: Arial, sans-serif;
             color: #3c4657;
-            padding: 2rem;
-            max-width: 500px;
+            padding: 1rem;
             margin: 0 auto 0 auto;
             padding: 0;
+
+            /* media query CSS to limit the width of the page when the browser window is wide */
+            @media (min-width: 400px) {
+                max-width: 400px;
+            }
+        }
+
+        .container {
+            background-color: white;
+            /* drop shadow */
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             color: #7f93b6;
-            font-size: 4rem;
+            font-size: 2rem;
             font-weight: bold;
             margin-bottom: 4rem;
-            text-align:center;
+            text-align: center;
         }
-        .photo-gallery{
-            margin-top:3em;
-            }
-            .photo-gallery .name{
-                margin-top:2em;
-                margin-bottom:2rem;
-            }
-            .photo-gallery img{
-                margin-bottom:2rem;
-            }
+
+        .photo-gallery {
+            margin-top: 3em;
+        }
+
+        .photo-gallery .name {
+            text-align: right;
+            margin-bottom: 4rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .photo-gallery img {}
+
         p {
             font-family: Arial, sans-serif;
             margin-bottom: 20px;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
+
         a {
             color: #326acc;
-       }
+        }
+
         .clippedImg {
             background-image: url("img/phare-de-capbreton-dans-les-frances-99682296.jpg");
-            background-position: -190px -55px;
+            background-position: -250px -55px;
             height: 80px;
             width: 100%;
         }
+
         .clippedImg2 {
             background-image: url("img/phare-de-capbreton-dans-les-frances-99682296.jpg");
-            background-position: -190px -55px;
+            background-position: -250px -55px;
             height: 500px;
             width: 100%;
         }
@@ -60,27 +81,31 @@
 </head>
 
 <body>
-    <div class='clippedImg'>&nbsp;</div>
-    <h1>Cabinet Infirmier des cigales</h1>
-    <p>Anciennement "Cabinet Christine Marbot", le cabinet infirmier des Cigales à Capbreton (Landes) regroupe
-        aujourd'hui 4 infirmiers :</p>
-    <div class="photo-gallery">
-        <div class="name">Elisabeth Rouault</div>
-        <img width="100%" src="img/elisabeth-rouault.jpg" alt="Elisabeth Rouault">
-        <div class="name">Pierre Orcellet</div>
-        <img width="100%" src="img/pierre-orcellet.jpg" alt="Pierre Orcellet">
-        <div class="name">Edouard Farre</div>
-        <img width="100%" src="img/edouard-farre.jpg" alt="Edouard Farre">
-        <div class="name">Lorene Laugier</div>
-        <img width="100%" src="img/lorene-laugier.jpg" alt="Lorene Laugier">
+    <div class='container'>
+        <div class='clippedImg'>&nbsp;</div>
+        <h1>Cabinet Infirmier<br />des Cigales</h1>
+        <p>Anciennement "Cabinet Christine Marbot", le cabinet infirmier des Cigales à Capbreton (Landes) regroupe
+            aujourd'hui 4 infirmiers :</p>
+        <div class="photo-gallery">
+            <img width="100%" src="img/elisabeth-rouault.jpg" alt="Elisabeth Rouault">
+            <div class="name">Elisabeth Rouault</div>
+            <img width="100%" src="img/pierre-orcellet.jpg" alt="Pierre Orcellet">
+            <div class="name">Pierre Orcellet</div>
+            <img width="100%" src="img/edouard-farre.jpg" alt="Edouard Farre">
+            <div class="name">Edouard Farre</div>
+            <img width="100%" src="img/lorene-laugier.jpg" alt="Lorene Laugier">
+            <div class="name">Lorene Laugier</div>
+        </div>
+        <p>Nous sommes ouverts tous les jours, dimanche et jours fériés inclus, de 7h à 20h et intervenons à domicile
+            sur
+            les communes de Hossegor, Soorts et Capbreton.</p>
+        <p>Spécialistes de tous les soins infirmiers conventionnés, nous facilitons la prise de rendez-vous par
+            téléphone.
+        </p>
+        <p class="phone">📞 <a href="tell:0558726048">05 58 72 60 48</a></p>
+        <p>Soyez rassurés, le numéro de téléphone fixe bascule sur le portable de l'infirmier de garde.</p>
+        <div class='clippedImg2'>&nbsp;</div>
     </div>
-    <p>Nous sommes ouverts tous les jours, dimanche et jours fériés inclus, de 7h à 20h et intervenons à domicile sur
-        les communes de Hossegor, Soorts et Capbreton.</p>
-    <p>Spécialistes de tous les soins infirmiers conventionnés, nous facilitons la prise de rendez-vous par téléphone.
-    </p>
-    <p class="phone">📞 <a href="tell:0558726048">05 58 72 60 48</a></p>
-    <p>Soyez rassurés, le numéro de téléphone fixe bascule sur le portable de l'infirmier de garde.</p>
-    <div class='clippedImg2'>&nbsp;</div>
 </body>
 
 </html>
